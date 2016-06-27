@@ -1,0 +1,97 @@
+
+@import "basic";
+
+/* BASIC
+***************************************************************************************************/
+
+$link: #f00;
+
+::-moz-selection{ background: #000; color: #fff; text-shadow: none; }
+::selection { background: #000; color: #fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #000; }
+
+html {height: 100%;}
+body {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #000;
+	background: #fff;
+	position: relative;
+	font-size: 14px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+@media all and (min-width: 480px) { body {font-size: 15px;}}
+@media all and (min-width: 768px) { body {font-size: 16px;}}
+@media all and (min-width: 1024px) { body {font-size: 18px;}}
+@media all and (min-width: 1600px) { body {font-size: 20px;}}
+
+input,
+textarea,
+select {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+*:focus {outline: none !important;}
+a {text-decoration: none;
+	&,
+	&:hover,
+	&:active,
+	&:visited {color: $link;}
+	&:hover {text-decoration: none;}
+}
+
+$c1: #20934e;
+
+/* MAIN
+***************************************************************************************************/
+
+.top {height: 75%; background: url(murkovci.jpg) no-repeat scroll center bottom; background-size: auto 100%;
+	max-height: 70vw;
+}
+
+.container {height: 100%; margin: 0 auto;
+
+	h2 {font-size: 2.4em; font-weight: 100; line-height: 1.1; margin-top: .25em;}
+	h3 {font-size: 1.3em; color: #888; font-weight: 300;}
+
+	header {text-align: center; background: #80678d; color: #fff;
+		padding: 1em;
+		h1 {font-size: 3em; font-weight: 100; line-height: 1; margin-bottom: .3em;}
+		h3 {color: #fff; line-height: 1.1; margin-bottom: .3em;}
+	}
+
+
+	section {padding: 5% 1em; border-top: 1px solid #ddd;  max-width: 1400px; text-align: center;
+
+		@media all and (min-width: 768px) {
+			padding: 5% 0px;
+		}
+
+		> div {display: flex; flex-flow: row wrap; align-items: center;
+
+			> iframe,
+			> .img {flex-basis: 40%; display: none;
+				img {max-width: 100%; height: auto;}
+			}
+			> div {flex-basis: 100%; padding: 0 1em; box-sizing: border-box;}
+
+			@media all and (min-width: 768px) {
+				> iframe,
+				> .img {display: block;}
+				> div {flex-basis: 60%; padding: 0 5em;}
+			}
+		}
+		p {max-width: 30em; margin: 1em auto; font-weight: 300;
+			strong {display: block; font-size: 1.3em;}
+		}
+		iframe {pointer-events: none;}
+
+		pre {font-size: .7em; color: $c1;}
+	}
+
+}
+
