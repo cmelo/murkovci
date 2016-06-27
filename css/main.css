@@ -297,7 +297,8 @@ select {
 a {
   text-decoration: none; }
   a, a:hover, a:active, a:visited {
-    color: #f00; }
+    color: inherit;
+    text-decoration: underline; }
   a:hover {
     text-decoration: none; }
 
@@ -364,6 +365,7 @@ a {
         .container section > div > iframe img,
         .container section > div > .img img {
           max-width: 100%;
+          width: 500px;
           height: auto; }
       .container section > div > div {
         -webkit-flex-basis: 100%;

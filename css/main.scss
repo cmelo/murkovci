@@ -40,7 +40,7 @@ a {text-decoration: none;
 	&,
 	&:hover,
 	&:active,
-	&:visited {color: $link;}
+	&:visited {color: inherit; text-decoration: underline;}
 	&:hover {text-decoration: none;}
 }
 
@@ -75,7 +75,7 @@ $c1: #20934e;
 
 			> iframe,
 			> .img {flex-basis: 40%; display: none;
-				img {max-width: 100%; height: auto;}
+				img {max-width: 100%; width: 500px; height: auto;}
 			}
 			> div {flex-basis: 100%; padding: 0 1em; box-sizing: border-box;}
 
