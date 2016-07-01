@@ -9,8 +9,10 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.slim.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="rainyday.js"></script>
 
 	<script>
 
@@ -24,23 +26,49 @@
 				$('.frame iframe').css("pointer-events", "none");
 			});
 
+			$(".ee").click(function() {run();});
+
 		});
 
+
+		function run() {
+			var h = $('.top').outerHeight();
+			$('#background').show().height(h);
+			var engine = new RainyDay({
+				image: document.getElementById('background'),
+				parentElement: document.getElementById('cpar'),
+				blur: 0,
+			});
+			engine.rain([
+				[3, 2, 0.3],
+				[5, 4, 0.4],
+				[6, 2, .5]
+			], 100);
+		}
+
+
 	</script>
+
+
 
 </head>
 
 <body>
 
+	<img id="background" src="./css/murkovci.jpg">
+
 	<div class="container">
 
-		<div class="top"></div>
+		<div class="top" id="cpar">
+			<div class="ee">&#9748;</div>
+		</div>
 
-		<header>
+		<header id="head">
 			<h1>Martin&nbsp;+&nbsp;Katka =&nbsp;Murkovci</h1>
 			<h3>
 				rovnica&nbsp;platí&nbsp;od
-				<a href="murkovci.ics">13.&nbsp;augusta&nbsp;2016,&nbsp;17:00</a>
+
+				<a href="murkovci.ics"><i class="ion-ios-calendar-outline"></i>&nbsp;13.&nbsp;augusta&nbsp;2016,&nbsp;17:00</a>
 			</h3>
 		</header>
 
@@ -115,7 +143,7 @@
 			<div>
 				<div>
 					<h2>Dress code</h2>
-					<p>Nevesta si želá, aby malo mužské osadenstvo hostí košeľu s dlhým rukávom a buď motýlik alebo nič. Ženích vraví, že u ženského osadenstva sú akceptovateľné šaty v dĺžke okolo kolien.</p>
+					<p>Nevesta si želá, aby malo mužské osadenstvo hostí košeľu s dlhými rukávmi (ktoré si môžu počas zábavy vykasať) a prišlo bez kravaty. Ženích vraví, že u ženského osadenstva sú akceptovateľné šaty v dĺžke okolo kolien (i dlhšie).</p>
 				</div>
 				<div class="img img-dresscode"></div>
 			</div>

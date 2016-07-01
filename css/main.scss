@@ -41,7 +41,7 @@ a {text-decoration: none;
 	&,
 	&:hover,
 	&:active,
-	&:visited {color: inherit; text-decoration: underline;}
+	&:visited {color: inherit; text-decoration: none;}
 	&:hover {text-decoration: none;}
 }
 
@@ -50,9 +50,17 @@ $c1: #20934e;
 /* MAIN
 ***************************************************************************************************/
 
-.top {height: 75%; background: url(murkovci.jpg) no-repeat scroll center bottom; background-size: auto 100%;
+.top {height: 75%; background: url(murkovci.jpg) no-repeat scroll center bottom; background-size: auto 100%; position: relative;
 	max-height: 70vw;
+
+	.ee {position: fixed; top: .5em; right: .5em; width: 2em; height: 2em; cursor: copy;
+		z-index: 9999; font-size: 8px; text-align: center;}
 }
+
+#background {position: absolute; opacity: 0;}
+
+canvas {height: 100%; position: absolute; left: 0; right: 0; top: 0; width: auto;
+	margin: 0 auto;}
 
 .container {height: 100%; margin: 0 auto;
 
@@ -63,6 +71,7 @@ $c1: #20934e;
 		padding: 1em;
 		h1 {font-size: 3em; font-weight: 100; line-height: 1; margin-bottom: .3em;}
 		h3 {color: #fff; line-height: 1.1; margin-bottom: .3em;}
+		a {border-bottom: 1px dotted #fff;}
 	}
 
 

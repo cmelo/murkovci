@@ -301,7 +301,7 @@ a {
   text-decoration: none; }
   a, a:hover, a:active, a:visited {
     color: inherit;
-    text-decoration: underline; }
+    text-decoration: none; }
   a:hover {
     text-decoration: none; }
 
@@ -311,7 +311,31 @@ a {
   height: 75%;
   background: url(murkovci.jpg) no-repeat scroll center bottom;
   background-size: auto 100%;
+  position: relative;
   max-height: 70vw; }
+  .top .ee {
+    position: fixed;
+    top: .5em;
+    right: .5em;
+    width: 2em;
+    height: 2em;
+    cursor: copy;
+    z-index: 9999;
+    font-size: 8px;
+    text-align: center; }
+
+#background {
+  position: absolute;
+  opacity: 0; }
+
+canvas {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: auto;
+  margin: 0 auto; }
 
 .container {
   height: 100%;
@@ -339,6 +363,8 @@ a {
       color: #fff;
       line-height: 1.1;
       margin-bottom: .3em; }
+    .container header a {
+      border-bottom: 1px dotted #fff; }
   .container section {
     padding: 0;
     border-top: 1px solid #ddd;
