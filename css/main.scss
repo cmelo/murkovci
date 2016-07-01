@@ -57,7 +57,7 @@ $c1: #20934e;
 		z-index: 9999; font-size: 8px; text-align: center;}
 }
 
-#background {position: absolute; opacity: 0;}
+#background {position: absolute; opacity: 0; z-index: -1;}
 
 canvas {height: 100%; position: absolute; left: 0; right: 0; top: 0; width: auto;
 	margin: 0 auto;}

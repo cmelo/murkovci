@@ -326,7 +326,8 @@ a {
 
 #background {
   position: absolute;
-  opacity: 0; }
+  opacity: 0;
+  z-index: -1; }
 
 canvas {
   height: 100%;
