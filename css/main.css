@@ -337,13 +337,10 @@ a {
       line-height: 1.1;
       margin-bottom: .3em; }
   .container section {
-    padding: 5% 1em;
+    padding: 0;
     border-top: 1px solid #ddd;
     max-width: 1400px;
     text-align: center; }
-    @media all and (min-width: 768px) {
-      .container section {
-        padding: 5% 0px; } }
     .container section > div {
       display: -webkit-box;
       display: -webkit-flex;
@@ -356,32 +353,49 @@ a {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .container section > div > iframe,
+      .container section > div > .frame,
       .container section > div > .img {
         -webkit-flex-basis: 40%;
             -ms-flex-preferred-size: 40%;
                 flex-basis: 40%;
-        display: none; }
-        .container section > div > iframe img,
-        .container section > div > .img img {
-          max-width: 100%;
-          width: 500px;
-          height: auto; }
+        display: none;
+        margin-top: 3em;
+        background-repeat: no-repeat;
+        -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+                align-self: stretch;
+        background-position: center bottom;
+        background-size: contain; }
+        .container section > div > .frame.img-gypsomilka,
+        .container section > div > .img.img-gypsomilka {
+          background-image: url(gypsomilka.jpg); }
+        .container section > div > .frame.img-dresscode,
+        .container section > div > .img.img-dresscode {
+          background-image: url(dresscode.jpg); }
+        .container section > div > .frame.img-brunch,
+        .container section > div > .img.img-brunch {
+          background-image: url(brunch.jpg); }
       .container section > div > div {
         -webkit-flex-basis: 100%;
             -ms-flex-preferred-size: 100%;
                 flex-basis: 100%;
-        padding: 0 1em;
-        box-sizing: border-box; }
+        padding: 1em;
+        box-sizing: border-box;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center; }
+      .container section > div > .frame {
+        margin: 5% 0;
+        padding: 0; }
       @media all and (min-width: 768px) {
-        .container section > div > iframe,
+        .container section > div > .frame,
         .container section > div > .img {
           display: block; }
         .container section > div > div {
           -webkit-flex-basis: 60%;
               -ms-flex-preferred-size: 60%;
                   flex-basis: 60%;
-          padding: 0 5em; } }
+          padding: 5em; } }
     .container section p {
       max-width: 30em;
       margin: 1em auto;
@@ -389,7 +403,7 @@ a {
       .container section p strong {
         display: block;
         font-size: 1.3em; }
-    .container section iframe {
+    .container section .frame iframe {
       pointer-events: none; }
     .container section pre {
       font-size: .7em;

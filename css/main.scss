@@ -65,30 +65,37 @@ $c1: #20934e;
 	}
 
 
-	section {padding: 5% 1em; border-top: 1px solid #ddd;  max-width: 1400px; text-align: center;
-
-		@media all and (min-width: 768px) {
-			padding: 5% 0px;
-		}
+	section {padding: 0; border-top: 1px solid #ddd;  max-width: 1400px; text-align: center;
 
 		> div {display: flex; flex-flow: row wrap; align-items: center;
 
-			> iframe,
-			> .img {flex-basis: 40%; display: none;
-				img {max-width: 100%; width: 500px; height: auto;}
+			> .frame,
+			> .img {flex-basis: 40%; display: none; margin-top: 3em;
+				background-repeat: no-repeat; align-self: stretch;
+				background-position: center bottom; background-size: contain;
+				&.img-gypsomilka {background-image: url(gypsomilka.jpg);}
+				&.img-dresscode {background-image: url(dresscode.jpg);}
+				&.img-brunch {background-image: url(brunch.jpg);}
 			}
-			> div {flex-basis: 100%; padding: 0 1em; box-sizing: border-box;}
+			> div {flex-basis: 100%; padding: 1em; box-sizing: border-box;
+				align-self: center;
+			}
+
+			>.frame {margin: 5% 0; padding: 0;}
 
 			@media all and (min-width: 768px) {
-				> iframe,
+				> .frame,
 				> .img {display: block;}
-				> div {flex-basis: 60%; padding: 0 5em;}
+				> div {flex-basis: 60%; padding: 5em;}
 			}
 		}
 		p {max-width: 30em; margin: 1em auto; font-weight: 300;
 			strong {display: block; font-size: 1.3em;}
 		}
-		iframe {pointer-events: none;}
+
+		.frame {
+			iframe {pointer-events: none;}
+		}
 
 		pre {font-size: .7em; color: $c1;}
 	}
