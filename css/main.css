@@ -382,7 +382,7 @@ a {
         -webkit-flex-basis: 100%;
             -ms-flex-preferred-size: 100%;
                 flex-basis: 100%;
-        padding: 1em;
+        padding: 1em 2em;
         box-sizing: border-box;
         -webkit-align-self: center;
             -ms-flex-item-align: center;
