@@ -53,10 +53,11 @@ $c1: #20934e;
 .top {height: 75%; background: url(murkovci.jpg) no-repeat scroll center bottom; background-size: auto 100%; position: relative;
 	max-height: 70vw;
 
-	.ee {position: fixed; top: .5em; right: .5em; width: 2em; height: 2em; cursor: copy;
+	.ee {position: fixed; top: .5em; right: .5em; width: 2em; height: 2em; cursor: help;
 		z-index: 9999; font-size: 8px; text-align: center;}
 }
 
+.bgwrapper {width: 1px; height: 1px; overflow: hidden; position: absolute;}
 #background {position: absolute; opacity: 0; z-index: -1;}
 
 canvas {height: 100%; position: absolute; left: 0; right: 0; top: 0; width: auto;
