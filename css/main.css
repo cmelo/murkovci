@@ -380,7 +380,8 @@ canvas {
     padding: 0;
     border-top: 1px solid #ddd;
     max-width: 1400px;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto; }
     .container section > div {
       display: -webkit-box;
       display: -webkit-flex;
