@@ -416,6 +416,11 @@ canvas {
         .container section > div > .frame.img-brunch,
         .container section > div > .img.img-brunch {
           background-image: url(brunch.jpg); }
+        .container section > div > .frame.img-nz,
+        .container section > div > .img.img-nz {
+          background-image: url(nz.png);
+          background-size: auto;
+          background-position: left center; }
       .container section > div > div {
         -webkit-flex-basis: 100%;
             -ms-flex-preferred-size: 100%;

@@ -91,6 +91,8 @@ canvas {height: 100%; position: absolute; left: 0; right: 0; top: 0; width: auto
 				&.img-gypsomilka {background-image: url(gypsomilka.jpg);}
 				&.img-dresscode {background-image: url(dresscode.jpg);}
 				&.img-brunch {background-image: url(brunch.jpg);}
+				&.img-nz {background-image: url(nz.png);
+					background-size: auto; background-position: left center;}
 			}
 			> div {flex-basis: 100%; padding: 1em 2em; box-sizing: border-box;
 				align-self: center;
