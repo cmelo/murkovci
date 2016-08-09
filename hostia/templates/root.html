@@ -1,0 +1,50 @@
+
+<div class="list" ng-if="!$ctrl.selected">
+	<a
+		ng-repeat="(letter, data) in $ctrl.letters track by letter"
+		ng-click="$ctrl.selected = {}; $ctrl.selected.letter = data"
+		ng-class="{empty: data.count === 0}"
+	>
+		{{letter}}
+		<small>{{data.count}}</small>
+	</a>
+</div>
+
+<div class="list" ng-if="$ctrl.selected.letter">
+	<a ng-click="$ctrl.selected = null" class="cancel">zrušiť</a>
+	<a
+		ng-repeat="(name, data) in $ctrl.selected.letter.names track by $index"
+		ng-click="$ctrl.selected = {}; $ctrl.selected.name = data"
+	>
+		{{name}}
+		<small>{{data.length}}</small>
+	</a>
+</div>
+
+<div class="list" ng-if="$ctrl.selected.name">
+	<a ng-click="$ctrl.selected = null" class="cancel">zrušiť</a>
+	<a
+		ng-repeat="person in $ctrl.selected.name track by $index"
+		ng-click="$ctrl.selected = {}; $ctrl.selected.person = person"
+	>
+		<small>{{person.first}}</small>
+		{{person.last}}
+	</a>
+</div>
+
+<div class="detail" ng-if="$ctrl.selected.person" ng-repeat="p in [$ctrl.selected.person]">
+
+	<h1>{{p.first}} {{p.last}}</h1>
+
+	<div class="circle">
+		<strong>{{p.place}}</strong>
+		stôl číslo
+	</div>
+
+	<p>
+		<button
+			ng-click="$ctrl.selected = null"
+		>nový hosť</button>
+	</p>
+
+</div>
