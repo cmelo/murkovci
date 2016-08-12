@@ -59,9 +59,10 @@ root {display: block; padding: 50px; max-width: 1500px; margin: 0 auto;}
 	}
 }
 
-#question {font-weight: bold; padding: 15px 20px; border: 2px solid $c2;
+#question {font-weight: bold; padding: 15px 5em; border: 2px solid $c2;
 	background: $c1; border-radius: 100px; text-align: center;
 	margin: 50px 10px 0;
+	em {color: $c2; position: absolute; margin-left: -1.5em;}
 
 }
 

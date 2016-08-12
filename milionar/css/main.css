@@ -320,12 +320,16 @@ root {
 
 #question {
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 15px 5em;
   border: 2px solid yellow;
   background: #081d48;
   border-radius: 100px;
   text-align: center;
   margin: 50px 10px 0; }
+  #question em {
+    color: yellow;
+    position: absolute;
+    margin-left: -1.5em; }
 
 #answers {
   display: -webkit-box;

@@ -34,7 +34,7 @@ app.component("root", {
 			vm.show = 0;
 			vm.a = null;
 			vm.q++;
-			if (vm.q > 4) {
+			if (vm.q > 9) {
 				vm.q = 0;
 				vm.show = 0;
 				vm.game = -1;
