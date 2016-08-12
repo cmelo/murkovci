@@ -41,10 +41,12 @@ app.component("root", {
 		};
 
 		vm.select = function (x) {
-			if (vm.cannext) { return ;}
+			if (vm.cannext || vm.selected_a) { return ;}
 			vm.a = x;
+			vm.selected_a = true;
 			setTimeout(function () {
 				vm.cannext = true;
+				vm.selected_a = false;
 				s2.play();
 			}, 4000);
 		};
