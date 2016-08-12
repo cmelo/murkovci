@@ -6,9 +6,11 @@ app.component("root", {
 	controller: function ($http) {
 		var vm = this;
 
+		var s0 = document.querySelector('#intro');
 		var s1 = document.querySelector('#background');
 		var s2 = document.querySelector('#rightsound');
 		s1.loop = true;
+		s0.play();
 
 
 		$http.get('questions.json').then(function (resp) {
