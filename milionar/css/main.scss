@@ -1,0 +1,91 @@
+
+@import "basic";
+
+/* BASIC
+***************************************************************************************************/
+
+$c1: #081d48;
+$c2: yellow;
+
+::-moz-selection{ background: #000; color: #fff; text-shadow: none; }
+::selection { background: #000; color: #fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #000; }
+
+html {height: 100%;}
+body {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #fff;
+	background: #06131f;
+	position: relative;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	font-size: 25px;
+}
+
+input,
+textarea,
+select {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+*:focus {outline: none !important;}
+a {text-decoration: none; cursor: pointer;
+	&,
+	&:hover,
+	&:active,
+	&:visited {color: inherit;}
+	&:hover {text-decoration: none;}
+}
+
+
+/* MAIN
+*****************************************************************************************/
+
+root {display: block; padding: 50px; max-width: 1500px; margin: 0 auto;}
+
+.hide {opacity: 0;}
+
+#logo {background: url(logo.png) no-repeat scroll center center;
+	background-size: cover; width: 1em; height: 1em; font-size: 200px;
+	margin: 0 auto;
+}
+
+#menu {text-align: center;
+	a {display: inline-block; padding: 20px; font-size: 3em;
+		&:hover {text-decoration: underline;}
+	}
+}
+
+#question {font-weight: bold; padding: 15px 20px; border: 2px solid $c2;
+	background: $c1; border-radius: 100px; text-align: center;
+	margin: 50px 10px 0;
+
+}
+
+
+#answers {display: flex; flex-flow: row wrap; margin: 10px 0;
+	> div {flex: 2 1 34%; margin: 10px;}
+
+	a {display: block; text-align: left;
+		font-weight: bold; padding: 15px 20px 15px 2.5em; border: 2px solid $c2;
+		background: $c1; border-radius: 100px;
+		&.selected {
+			animation: 5s okkk linear forwards;
+		}
+		em {color: $c2; position: absolute; margin-left: -1.5em;}
+	}
+
+	@keyframes okkk {
+		0% {background: lighten($c1, 20%);}
+		85% {background: lighten($c1, 20%);}
+		88% {background: green;}
+		91% {background: lighten($c1, 20%);}
+		94% {background: green;}
+		97% {background: lighten($c1, 20%);}
+		100% {background: green;}
+	}
+
+}

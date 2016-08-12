@@ -1,0 +1,42 @@
+
+<div id="logo" ng-click="$ctrl.next()"></div>
+
+<div id="menu" ng-if="!($ctrl.game > -1)">
+	<a ng-click="$ctrl.play(0);">Martin</a>
+	<a ng-click="$ctrl.play(1);">Katka</a>
+</div>
+
+<div ng-repeat="x in $ctrl.data.games[$ctrl.game] track by $index">
+
+	<div id="question" ng-class="{hide: $ctrl.show < 1}">
+		{{x[$ctrl.q].question}}
+	</div>
+
+	<div id="answers">
+		<div ng-class="{hide: $ctrl.show < 2}">
+			<a
+				ng-class="{selected: $ctrl.a === 0}"
+				ng-click="$ctrl.select(0)"
+			><em>A:</em> {{x[$ctrl.q].content[0]}}</a>
+		</div>
+		<div ng-class="{hide: $ctrl.show < 3}">
+			<a
+				ng-class="{selected: $ctrl.a === 1}"
+				ng-click="$ctrl.select(1)"
+			><em>B:</em> {{x[$ctrl.q].content[1]}}</a>
+		</div>
+		<div ng-class="{hide: $ctrl.show < 4}">
+			<a
+				ng-class="{selected: $ctrl.a === 2}"
+				ng-click="$ctrl.select(2)"
+			><em>C:</em> {{x[$ctrl.q].content[2]}}</a>
+		</div>
+		<div ng-class="{hide: $ctrl.show < 5}">
+			<a
+				ng-class="{selected: $ctrl.a === 3}"
+				ng-click="$ctrl.select(3)"
+			><em>D:</em> {{x[$ctrl.q].content[3]}}</a>
+		</div>
+	</div>
+
+</div>

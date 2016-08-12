@@ -1,0 +1,112 @@
+{
+	"games" : [
+		{
+			"questions" : [
+				{
+					"question" : "Za čo sa Katka na začiatku vzťahu za teba pred ľudmi hanbila najviac?",
+					"content" : [
+						"za dva zavesené mobily na krku",
+						"za kapsáče",
+						"za tvoj Tourettov syndróm",
+						"za smrkanie"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Aká bola Katkina prvá myšlienka, keď sa stretla s Jožkou?",
+					"content" : [
+						"„To je Mackov brat?“",
+						"„Nikdy som nevidela tepláky vytiahnuté tak vysoko!“",
+						"„Konečne mám parťáčku na kanastu“",
+						"„Tak toto je tá riaditeľka vesmíru?“"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Čo by urobila Katka, ak by si dnes povedal nie?",
+					"content" : [
+						"išla by sama na Nový Zéland",
+						"vyzvala by Čmelka, nech  ťa zastúpi",
+						"vybila by všetky okná na tvojej Lada Niva",
+						"vyhľadala by najbližšie jóga centrum"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Prečo si Katka na Silvestra 2009 zo všetkých prítomných chlapcov vybrala práve teba?",
+					"content" : [
+						"ako jediný si s ňou vydržal až do rána",
+						"Galgo nesmrdel po cesnakových čipsoch",
+						"Peťo bol vtedy zadaný",
+						"bol si jediný exotický typ"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Kedy Katka vie, že si dosiahol maximálny level zúrivosti?",
+					"content" : [
+						"oduješ sa a odmlčíš sa",
+						"odídeš za mamičkou  na Dubovú",
+						"ideš sa hrať na počítači",
+						"stupňujúco kričíš„Vrrrrhmmm, zase!“ a mykáš pritom zúrivo rukami"
+					],
+					"correct" : 0
+				}
+			]
+		},
+		{
+			"questions": [
+				{
+					"question" : "Čo by urobil Macko, keby pri požiadaní o ruku odpovieš nie?",
+					"content" : [
+						"prosíkal by, až dokiaľ by si nepovedala áno",
+						"vyzval by Čmelka, nech ťa zastúpi",
+						"zareval by rovnako, ako keď Jožka postaví do dráhy kosačky kvetináč",
+						"táto otázka nemá zmysel, pretože Macko je sen každej ženy"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Prečo si Macko na Silvestra 2009 zo všetkých prítomných dievčat vybral práve teba?",
+					"content" : [
+						"dve z nich boli jeho sesternice",
+						"pôvabnejšej devy v šírom svete nieto",
+						"„má rici aj cici“",
+						"potreboval ubytko v Prahe"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Hypotetická otázka (nepredpokladáme jej pravdivosť): Čo by Macko povedal po nevydarenom sexe?",
+					"content" : [
+						"Zase prvý!",
+						"Keď si to vydržala doteraz, tak si to dáme ešte raz!",
+						"Z každej šlamastiky sa dá vylízať.",
+						"Hlavne, že sa ľúbime."
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Ktorý syndróm  na tebe Mackovi najviac prekáža?",
+					"content" : [
+						"Syndróm gastrokritika",
+						"Šetriaci syndróm",
+						"Recyklačný syndróm",
+						"Cyklačný syndróm"
+					],
+					"correct" : 0
+				},
+				{
+					"question" : "Ktorý z tvojich nasledujúcich výrokov vie Macka najviac vytočiť pri romantickej večeri v reštaurácii?",
+					"content" : [
+						"„To je pravá kofola?“",
+						"„Dám si nesýtenú vodu z vodovodu.“",
+						"„Ja si nič nedám, dám si od teba.“",
+						" „To je pravá kofola? Tak ja si dám vodu z vodovodu, alebo nedám si nič a dám si od teba.“"
+					],
+					"correct" : 0
+				}
+			]
+		}
+	]
+}
