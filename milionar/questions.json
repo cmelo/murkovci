@@ -2,15 +2,7 @@
 	"games" : [
 		{
 			"questions" : [
-{
-					"question" : "Prečo si Macko na Silvestra 2009 zo všetkých prítomných dievčat vybral práve teba?",
-					"content" : [
-						"dve z nich boli jeho sesternice",
-						"pôvabnejšej devy v šírom svete nieto",
-						"„máš rici aj cici“",
-						"potreboval ubytko v Prahe"
-					]
-				},
+
 
 				{
 					"question" : "Za čo sa Katka na začiatku vzťahu za teba pred ľuďmi hanbila najviac?",
@@ -19,6 +11,15 @@
 						"za kapsáče",
 						"za tvoj Tourettov syndróm",
 						"za smrkanie"
+					]
+				},
+				{
+					"question" : "Prečo si Macko na Silvestra 2009 zo všetkých prítomných dievčat vybral práve teba?",
+					"content" : [
+						"dve z nich boli jeho sesternice",
+						"pôvabnejšej devy v šírom svete nieto",
+						"„máš rici aj cici“",
+						"potreboval ubytko v Prahe"
 					]
 				},
 
@@ -67,15 +68,6 @@
 						"vyhľadala by najbližšie jóga centrum"
 					]
 				},
-				{
-					"question" : "Hypotetická otázka (nepredpokladáme jej pravdivosť): Čo by Macko povedal po nevydarenom sexe?",
-					"content" : [
-						"Zase prvý!",
-						"Keď si to vydržala doteraz, tak si to dáme ešte raz!",
-						"Z každej šlamastiky sa dá vylízať.",
-						"Hlavne, že sa ľúbime."
-					]
-				},
 
 
 
@@ -87,6 +79,15 @@
 						"Šetriaci syndróm",
 						"Recyklačný syndróm",
 						"Cyklačný syndróm"
+					]
+				},
+				{
+					"question" : "Hypotetická otázka (nepredpokladáme jej pravdivosť): Čo by Macko povedal po nevydarenom sexe?",
+					"content" : [
+						"Zase prvý!",
+						"Keď si to vydržala doteraz, tak si to dáme ešte raz!",
+						"Z každej šlamastiky sa dá vylízať.",
+						"Hlavne, že sa ľúbime."
 					]
 				},
 
