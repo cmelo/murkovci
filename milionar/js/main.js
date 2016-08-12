@@ -8,6 +8,7 @@ app.component("root", {
 
 		var s1 = document.querySelector('#background');
 		var s2 = document.querySelector('#rightsound');
+		s1.loop = true;
 
 
 		$http.get('questions.json').then(function (resp) {
