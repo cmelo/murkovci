@@ -24,13 +24,43 @@
 				},
 
 
+
+
+
 				{
-					"question" : "Aká bola Katkina prvá myšlienka, keď sa stretla s Jožkou?",
+					"question" : "Prečo si Katka na Silvestra 2009 zo všetkých prítomných chlapcov vybrala práve teba?",
 					"content" : [
-						"„To je Mackov brat?“",
-						"„Nikdy som nevidela tepláky vytiahnuté tak vysoko!“",
-						"„Konečne mám parťáčku na kanastu“",
-						"„Tak toto je tá riaditeľka vesmíru?“"
+						"ako jediný si s ňou vydržal až do rána",
+						"Galgo nesmrdel po cesnakových čipsoch",
+						"Peťo bol vtedy zadaný",
+						"bol si jediný exotický typ"
+					]
+				},
+				{
+					"question" : "Ktorý syndróm  na tebe Mackovi najviac prekáža?",
+					"content" : [
+						"Syndróm gastrokritika",
+						"Šetriaci syndróm",
+						"Recyklačný syndróm",
+						"Cyklačný syndróm"
+					]
+				},
+
+
+
+
+
+
+
+
+
+				{
+					"question" : "Čo by urobila Katka, ak by si dnes povedal nie?",
+					"content" : [
+						"išla by sama na Nový Zéland",
+						"vyzvala by Čmelka, nech  ťa zastúpi",
+						"vybila by všetky okná na tvojej Lada Niva",
+						"vyhľadala by najbližšie jóga centrum"
 					]
 				},
 
@@ -47,40 +77,18 @@
 
 
 
-				{
-					"question" : "Prečo si Katka na Silvestra 2009 zo všetkých prítomných chlapcov vybrala práve teba?",
-					"content" : [
-						"ako jediný si s ňou vydržal až do rána",
-						"Galgo nesmrdel po cesnakových čipsoch",
-						"Peťo bol vtedy zadaný",
-						"bol si jediný exotický typ"
-					]
-				},
-
 
 
 				{
-					"question" : "Čo by urobila Katka, ak by si dnes povedal nie?",
+					"question" : "Aká bola Katkina prvá myšlienka, keď sa stretla s Jožkou?",
 					"content" : [
-						"išla by sama na Nový Zéland",
-						"vyzvala by Čmelka, nech  ťa zastúpi",
-						"vybila by všetky okná na tvojej Lada Niva",
-						"vyhľadala by najbližšie jóga centrum"
+						"„To je Mackov brat?“",
+						"„Nikdy som nevidela tepláky vytiahnuté tak vysoko!“",
+						"„Konečne mám parťáčku na kanastu“",
+						"„Tak toto je tá riaditeľka vesmíru?“"
 					]
 				},
 
-
-
-
-				{
-					"question" : "Ktorý syndróm  na tebe Mackovi najviac prekáža?",
-					"content" : [
-						"Syndróm gastrokritika",
-						"Šetriaci syndróm",
-						"Recyklačný syndróm",
-						"Cyklačný syndróm"
-					]
-				},
 				{
 					"question" : "Hypotetická otázka (nepredpokladáme jej pravdivosť): Čo by Macko povedal po nevydarenom sexe?",
 					"content" : [
@@ -90,6 +98,9 @@
 						"Hlavne, že sa ľúbime."
 					]
 				},
+
+
+
 
 
 
